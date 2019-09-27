@@ -1,17 +1,22 @@
 package com.renault;
 
+import com.renault.computer.Computer;
+import com.renault.computer.Keyboard;
+
 public class Application {
+
     public static void main(String[] args) {
 
-        Person marco = new Person("Marco", "Veratti");
-        System.out.println(marco);
+        Keyboard keyboard = new Keyboard(50);
+        Computer apple = new Computer("apple", 32, keyboard);
 
-        Person m2 = new Person("Marco", "Veratti");
-        System.out.println(m2);
+        apple.start();
 
-        // marco vs m2 = not equals = false
-        boolean equals = marco.equals(m2);
-        System.out.println(equals);
 
+        apple.doSomeStuff();
+
+
+        apple.stop();
     }
+
 }

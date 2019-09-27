@@ -1,4 +1,4 @@
-package com.renault;
+package com.renault.person;
 
 import lombok.*;
 
